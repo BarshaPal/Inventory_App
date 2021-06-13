@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app.context="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditActivity"
+   >
+
+<item android:title="@string/action_delete"
+    android:icon="@drawable/delete"
+    android:id="@+id/delete"
+    app:showAsAction="always">
+</item>
+    <item android:title="@string/action_save"
+        android:icon="@drawable/tick"
+        android:id="@+id/save"
+        app:showAsAction="always" ></item>
+
+
+
+</menu>

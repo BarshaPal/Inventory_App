@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Image view for displaying our book image-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="229dp"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/purple_500"
+        android:outlineAmbientShadowColor="#776F6F"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_margin="16dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/card_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/idBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:text="@string/Book_name"
+            android:textSize="29sp" />
+
+        <!--text view for displaying book subtitle-->
+        <TextView
+            android:id="@+id/id_Author_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/Author_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_margin="20dp"
+            android:src="@android:drawable/ic_menu_call"
+            android:background="@drawable/magnitude_call"></ImageView>
+        <ImageView
+            android:id="@+id/mail"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/mail"
+            android:background="@drawable/magnitude_mail"></ImageView>
+    </LinearLayout>
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!--Image view for displaying our book image-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:outlineAmbientShadowColor="#776F6F"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp">
+
+                <!-- Weight field -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/seller_name"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="10dp"
+
+                    android:text="@string/Seller_name"
+                    style="@style/DetailUnitStyle"
+                    />
+                <!-- Units for weight (kg) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/seller_name_container"
+                    style="@style/DetailStyle"
+                    android:layout_margin="10dp"
+                    android:text="@string/Seller_name"
+                    android:layout_alignRight="@+id/seller_name"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:outlineAmbientShadowColor="#776F6F"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="6dp">
+
+                            <!-- Weight field -->
+                            <TextView
+                                android:id="@+id/phone_display"
+                                android:text="@string/Phonenumber"
+                                android:paddingLeft="10dp"
+                                android:layout_margin="10dp"
+                                style="@style/DetailUnitStyle"/>
+                            <!-- Units for weight (kg) -->
+                            <TextView
+                                android:id="@+id/phone_display_container"
+                                style="@style/DetailStyle"
+                                android:text="34"
+                                android:layout_margin="10dp"
+                                android:layout_alignRight="@+id/phone_display"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/container_seller_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="1dp">
+
+                            <!-- Weight field -->
+                            <TextView
+
+                                android:text="@string/Email"
+                                android:layout_margin="10dp"
+                                android:paddingLeft="20dp"
+                                style="@style/DetailUnitStyle"/>
+                            <!-- Units for weight (kg) -->
+                            <TextView
+                                android:id="@+id/email_display_container"
+                                style="@style/DetailStyle"
+                                android:text="34"
+                                android:layout_margin="10dp"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:outlineAmbientShadowColor="#776F6F"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="6dp">
+
+                            <!-- Weight field -->
+                            <TextView
+                                android:id="@+id/Stock"
+                                android:text="InStock"
+                                android:paddingLeft="20dp"
+                                android:layout_margin="10dp"
+                                style="@style/DetailUnitStyle"/>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                style="@style/DetailStyle"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dp"
+                                android:orientation="horizontal">
+                                <Button
+                                    android:layout_width="35dp"
+                                    android:layout_height="40dp"
+                                    android:focusable="false"
+                                    android:onClick="decrease"
+                                    android:layout_marginRight="10dp"
+                                    android:text="-"
+
+                                    android:id="@+id/sub_butn"/>
+
+                                <TextView
+                                    android:id="@+id/stock_container"
+                                    android:layout_width="wrap_content"
+                                    android:textAlignment="center"
+                                    android:background="@drawable/magnitude_count"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    tools:ignore="RtlCompat"/>
+
+                                <Button
+                                    android:id="@+id/add_butn"
+                                    android:layout_width="35dp"
+                                    android:layout_height="40dp"
+                                    android:focusable="false"
+                                    android:layout_marginLeft="10dp"
+                                    android:onClick="increase"
+                                    android:text="+" />
+
+                            </LinearLayout>
+                            <!-- Units for weight (kg) -->
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="1dp">
+
+                            <!-- Weight field -->
+                            <TextView
+
+                                android:text="Quantity"
+                                android:layout_margin="10dp"
+                                android:paddingLeft="20dp"
+                                style="@style/DetailUnitStyle"/>
+                            <!-- Units for weight (kg) -->
+                            <TextView
+                                android:id="@+id/quantitycontainer"
+                                style="@style/DetailStyle"
+                                android:text="34"
+                                android:layout_margin="10dp"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
